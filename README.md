@@ -7,4 +7,4 @@
 - git clone https://github.com/brianandhikap/ytta-otp
 - cd ytta-otp
 - yarn install
-- node gas.js
+- node ytta.js
