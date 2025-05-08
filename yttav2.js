@@ -92,8 +92,9 @@ async function startSpam() {
       pairingCode = pairingCode?.match(/.{1,4}/g)?.join('-') || pairingCode;
       console.log(chalk.bgBlack(chalk.greenBright('Pairing Code: ' + pairingCode)));
       console.log(chalk.whiteBright('Spam Dalam..: ' + countdown + ' s...'));
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      countdown--;
+      await new Promise((resolve) => setTimeout(resolve, 5000)); // 5 detik
+      countdown -= 5; // kurangi countdown per 5 detik
+      //countdown--; // kalau countdown 1 detik pakai ini
     }
   }
 
