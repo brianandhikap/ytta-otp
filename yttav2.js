@@ -86,7 +86,7 @@ async function startSpam() {
       nomor = await question(chalk.whiteBright('Input NO Whatsapp: +628xxx : '));
     }
 
-    let countdown = 60;
+    let countdown = 60; //ganti sesuai kebutuhan rekomendasi 60 kali saja
     while (countdown > 0) {
       let pairingCode = await sock.requestPairingCode(nomor);
       pairingCode = pairingCode?.match(/.{1,4}/g)?.join('-') || pairingCode;
